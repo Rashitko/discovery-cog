@@ -1,0 +1,3 @@
+modules:
+- {class_name: DiscoveryService, prefix: discovery_cog.modules.discovery_module}
+recorders: []

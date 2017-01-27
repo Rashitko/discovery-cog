@@ -15,4 +15,7 @@ setup(
     author_email='michal.raska@gmail.com',
     description='',
     install_requires=['up', 'twisted', 'pyyaml'],
+    package_data={
+        'discovery_cog': ['discovery_cog/registered_modules.yml']
+    }
 )
