@@ -28,6 +28,5 @@ class DiscoveryProtocol(DatagramProtocol):
 
     def datagramReceived(self, datagram, addr):
         super().datagramReceived(datagram, addr)
-        my_address = socket.gethostbyname(socket.gethostname())
         self.__logger.debug("Discovery request from {}".format(addr[0]))
-        self.transport.write(bytes(my_address, 'utf-8'), addr)
+        self.transport.write(bytes("1", 'utf-8'), addr)
